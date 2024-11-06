@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-04T23:49:32.891Z",
+    "end": "2024-11-04T23:49:33.993Z",
+    "duration": 1102,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd9d0b8b-ac0e-4f54-bf62-07fb0c1c7e99",
+      "title": "",
+      "fullFile": "cypress/e2e/cart/instant-cart.cy.js",
+      "file": "cypress/e2e/cart/instant-cart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "37fdef5e-2243-49f4-a932-7f8fd1a1ca63",
+          "title": "Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifies cart items display",
+              "fullTitle": "Cart Verifies cart items display",
+              "timedOut": null,
+              "duration": 1062,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const items = ['Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Onesie'];\nconst ids = items.map(name => Cypress._.find(_inventoryData.allItems, {\n  name\n}).id);\nwindow.localStorage.setItem('cart-contents', JSON.stringify(ids));\ninventory.getCartBadge().click();\ncy.location('pathname').should('equal', '/cart.html');\ncart.getCartItem().should('have.length', items.length);\nitems.forEach((itemName, k) => {\n  cart.getCartItem().eq(k).within(() => {\n    cy.contains('.inventory_item_name', itemName);\n    cy.contains('.cart_quantity', 1);\n  });\n});",
+              "err": {},
+              "uuid": "071d74c0-d1e3-4430-977b-67aedacb58a0",
+              "parentUUID": "37fdef5e-2243-49f4-a932-7f8fd1a1ca63",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "071d74c0-d1e3-4430-977b-67aedacb58a0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1062,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
