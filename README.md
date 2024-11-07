@@ -5,25 +5,24 @@ Welcome to the **Automated-Testing-With-Cypress** project! This repository conta
 ## Project Structure 📁
 
 Here's a quick overview of the project structure:
-
+``` 
 🗂 Automated-Testing-With-Cypress
-  ├──cypress/
-  │  ├── e2e/                     
-  │  │   ├── cart/                                              
-  │  │   ├── checkout/            
-  │  │   ├── inventory/           
-  │  │   ├── login/               
-  │  │   ├── productPage/         
-  │  ├── fixtures/                
-  │  ├── pageObjects/             
-  │  ├── reports/                 
-  │  ├── support/                 
-  ├──gitignore                  
-  ├──cypress-mochawesome-reporter.d.ts 
-  ├──cypress.config.js            
-  ├──package-lock.json           
-  ├──package.json       
-
+  ├── cypress/
+  │   ├── e2e/                     
+  │   │   ├── cart/                                              
+  │   │   ├── checkout/            
+  │   │   ├── inventory/           
+  │   │   ├── login/               
+  │   │   ├── productPage/         
+  │   ├── fixtures/                
+  │   ├── pageObjects/             
+  │   ├── reports/                 
+  │   ├── support/                 
+  ├── .gitignore                  
+  ├── cypress-mochawesome-reporter.d.ts 
+  ├── cypress.config.js            
+  ├── package-lock.json           
+  ├── package.json  
 
 ## Installation 🛠️
 
