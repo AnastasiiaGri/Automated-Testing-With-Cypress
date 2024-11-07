@@ -3,8 +3,8 @@ import LoginPage from "../../pageObjects/LoginPage"
 import  InventoryPage  from '../../pageObjects/InventoryPage'
 import {users} from '../../fixtures/login.json'
 
-const login = new LoginPage()
-const inventory = new InventoryPage()
+const login = new LoginPage
+const inventory = new InventoryPage
 
 describe("Cart Item Order", () => {
   const user = users.standard

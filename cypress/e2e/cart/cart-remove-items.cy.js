@@ -5,9 +5,9 @@ import LoginPage from '../../pageObjects/LoginPage'
 import {users} from '../../fixtures/login.json'
 import {inventoryItems} from '../../fixtures/inventoryData.json'
 
-const login = new LoginPage()
-const inventory = new InventoryPage()
-const cart = new CartPage()
+const login = new LoginPage
+const inventory = new InventoryPage
+const cart = new CartPage
 
 describe('Cart', () => {
   const user = users.standard
