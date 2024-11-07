@@ -49,7 +49,7 @@ npm install
 ## Running Tests 🚀
 
   ```sh
- npm cypress open 
+ npx cypress open 
  ```
 
 ## ✨ Features 
