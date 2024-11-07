@@ -1,44 +1,67 @@
 # Automated-Testing-With-Cypress
 
-Welcome to the **Automated-Testing-With-Cypress** project! This repository contains end-to-end (E2E) tests for an e-commerce platform using Cypress. ✨
+Welcome to the **Automated-Testing-With-Cypress** project! This repository contains some samples of tests for an e-commerce platform using Cypress ✨
 
 ## Project Structure 📁
 
 Here's a quick overview of the project structure:
 
-
-```
+🗂 Automated-Testing-With-Cypress
+  ├──cypress/
+  │  ├── e2e/                     
+  │  │   ├── cart/                                              
+  │  │   ├── checkout/            
+  │  │   ├── inventory/           
+  │  │   ├── login/               
+  │  │   ├── productPage/         
+  │  ├── fixtures/                
+  │  ├── pageObjects/             
+  │  ├── reports/                 
+  │  ├── support/                 
+  ├──gitignore                  
+  ├──cypress-mochawesome-reporter.d.ts 
+  ├──cypress.config.js            
+  ├──package-lock.json           
+  ├──package.json       
 
 
 ## Installation 🛠️
 
 Clone the repository:
-   ```sh
-   git clone
-   
+```sh
+   git clone  https://github.com/AnastasiiaGri/Automated-Testing-With-Cypress.git
+```
+
+
 ## Navigate to the project directory:
 
-
-
   ```sh
-cd UI-Tests-for-Ecommerce
+cd Automated-Testing-With-Cypress
  ```
+
+
 ## Install dependencies:
 
   ```sh
-
 npm install
  ```
+
 
 ## Running Tests 🚀
 
   ```sh
-
-npm run cy:open
+ npm cypress open 
  ```
 
+## ✨ Features 
 
-## Folder Structure 🗂️
-```plaintext
+```sh
+- Organized test structure with the Page Object Model (POM).
+- Covers core e-commerce workflows:
+   - User login
+   - Adding items to the cart
+   - Checkout process
+   - Viewing product inventory and details
+- Generates detailed test reports using Mochawesome.
+``` 
 
- ```
