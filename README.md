@@ -1,6 +1,6 @@
 # Automated-Testing-With-Cypress
-
-Welcome to the **Automated-Testing-With-Cypress** project! This repository contains some samples of tests for an e-commerce platform using Cypress ✨
+Welcome to the Automated-Testing-With-Cypress project!
+This repository contains sample end-to-end tests for an e-commerce platform using the Cypress framework.
 
 ## Project Structure 📁
 
@@ -23,23 +23,23 @@ Here's a quick overview of the project structure:
   ├── cypress.config.js            
   ├── package-lock.json           
   ├── package.json  
+```
 
 ## Installation 🛠️
 
 Clone the repository:
-```sh
-   git clone  https://github.com/AnastasiiaGri/Automated-Testing-With-Cypress.git
+```sh 
+ git clone  https://github.com/AnastasiiaGri/Automated-Testing-With-Cypress.git
 ```
 
-
-## Navigate to the project directory:
+## 📂 Navigate to the project directory:
 
   ```sh
 cd Automated-Testing-With-Cypress
  ```
 
 
-## Install dependencies:
+## 🔧 Install dependencies:
 
   ```sh
 npm install
