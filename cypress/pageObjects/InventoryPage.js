@@ -19,6 +19,9 @@ class InventoryPage {
       .click()
       return this
   }
+  selectItem(name) {
+    return cy.contains('.inventory_item', name);
+  }
 
   clickOnMenuBtn(){
     this.getMenuBtn().click()
