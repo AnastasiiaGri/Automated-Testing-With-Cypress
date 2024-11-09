@@ -1,7 +1,7 @@
 /// <reference types='cypress'/>
 import LoginPage from '../../pageObjects/LoginPage'
 
-const login = new LoginPage()
+const login = new LoginPage
 
 describe('Login Form Validation', () => {
   beforeEach(() => {
@@ -9,8 +9,10 @@ describe('Login Form Validation', () => {
     login.getUserNameField().clear()
     login.getPasswordField().clear()
   })
+  
   it('logs in successfully with valid credentials', () => {
-    login.loginStandartUser()
+    login
+      .loginStandartUser()
   })
 
   it('displays an error for an invalid username', () => {
