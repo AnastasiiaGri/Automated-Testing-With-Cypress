@@ -2,8 +2,8 @@
 import LoginPage from '../../pageObjects/LoginPage'
 import { users } from '../../fixtures/login.json'
 import InventoryPage from '../../pageObjects/InventoryPage'
-const login = new LoginPage()
-const inventory = new InventoryPage()
+const login = new LoginPage
+const inventory = new InventoryPage
 
 describe('Logout functionality from inventory page', () => {
   const user = users.standard.username
