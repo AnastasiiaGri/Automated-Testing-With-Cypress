@@ -2,7 +2,7 @@
 import LoginPage from '../../pageObjects/LoginPage'
 const login = new LoginPage
 
-describe('Login erroe for locked-out user ', () => {
+describe('Login error for locked-out user ', () => {
   
   it('displays an error for locked-out user', () => {
     cy.visit('/')
