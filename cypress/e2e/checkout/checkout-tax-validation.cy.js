@@ -4,7 +4,7 @@ import {inventoryItems} from '../../fixtures/inventoryData.json'
 import InventoryPage from '../../pageObjects/InventoryPage'
 import CartPage from '../../pageObjects/CartPage'
 import CheckoutInfoPage from '../../pageObjects/CheckoutInfoPage'
-import CheckoutOverviewPage from '../../pageObjects/CheckOutOwerviewPage'
+import CheckoutOverviewPage from '../../pageObjects/CheckOutOverviewPage'
 import {fillForm} from '../../fixtures/checkoutInfo.json'
 
 const login = new LoginPage
