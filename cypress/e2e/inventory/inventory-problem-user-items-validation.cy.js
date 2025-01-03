@@ -6,12 +6,15 @@ import {inventoryItems} from '../../fixtures/inventoryData.json'
 const login = new LoginPage
 const inventory = new InventoryPage
 
+// this test suite should fail because of the problem user name 
 describe('Inventory Items Validation', () => {
   beforeEach(() => {
     cy.log('**log in**')
     cy.visit('/')
     login
-      .loginStandartUser()
+      .enterProblemUserName()
+      .enterPassword()
+      .clickLoginButton()
     inventory
       .getInventoryList()
       .parent()
@@ -20,23 +23,15 @@ describe('Inventory Items Validation', () => {
   
   inventoryItems.forEach((value, ind) => {
     const nameOfItem = Object.values(value)[0]
-    const desc = Object.values(value)[1]
-    const price = Object.values(value)[2]
     const image = Object.values(value)[4]
 
-    it(`displays item name correctly for ${nameOfItem}`, function () {
+    it(`verifies image for ${nameOfItem}`, function () {
       cy.wrap(this.list[ind])
         .find('.inventory_item_name')
         .should('have.text', nameOfItem)
       cy.wrap(this.list[ind])
-        .find('.inventory_item_desc')
-        .should('have.text', desc)
-      cy.wrap(this.list[ind])
-        .find('.inventory_item_price')
-        .should('have.text', price)
-        cy.wrap(this.list[ind])
         .find('img.inventory_item_img')
-        .should('have.attr', 'src', image) 
+        .should('have.attr', 'src', image)
     })
   })
 })
