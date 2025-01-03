@@ -6,7 +6,7 @@ import InventoryPage from "../../pageObjects/InventoryPage"
 import CheckoutInfoPage from "../../pageObjects/CheckoutInfoPage"
 import {fillForm} from '../../fixtures/checkoutInfo.json'
 import CartPage from "../../pageObjects/CartPage"
-import CheckoutOverviewPage from "../../pageObjects/CheckOutOwerviewPage"
+import CheckoutOverviewPage from "../../pageObjects/CheckOutOverviewPage"
 import CheckoutComplete from "../../pageObjects/CheckoutComplete"
 
 const login = new LoginPage
