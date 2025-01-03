@@ -1,5 +1,7 @@
 /// <reference types='cypress'/>
 import LoginPage from '../../pageObjects/LoginPage'
+import {users} from '../../fixtures/login.json'
+
 
 const login = new LoginPage
 
@@ -67,5 +69,13 @@ describe('Login Form Validation', () => {
       .clickLoginButton()
       .getError()
       .should('have.text', 'Epic sadface: Password is required')
+  })
+
+  it('verifies the password field hides the input', () => {
+    cy.get('input[type="password"]')
+      .type(users.standard.password)
+      .should('be.visible')
+      .and('have.value',users.standard.password)
+    cy.screenshot()
   })
 })
