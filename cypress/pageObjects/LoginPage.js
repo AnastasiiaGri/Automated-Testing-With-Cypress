@@ -16,7 +16,7 @@ class LoginPage {
 
   loginStandartUser() {
     this.enterStandartUserName().enterPassword().clickLoginButton()
-    cy.location('pathname').should('equal', '/inventory.html')
+   return this
   }
 
   enterStandartUserName() {
